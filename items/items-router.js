@@ -7,7 +7,8 @@ const verifyItemId = require("../auth/middleware/verifyItemId-middleware.js");
 
 //add Item
 router.post("/additem", restricted, validateItemsContent, (req, res) => {
-    Items.addItem(req.body)
+    const id = req.jwtToken.subject
+    Items.addItem(req.body, id)
         .then(item => {
             res.status(201).json(item);
         })

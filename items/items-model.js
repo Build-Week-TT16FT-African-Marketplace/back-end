@@ -14,7 +14,8 @@ function getItems() {
     return db("items");
 }
 
-function addItem(item) {
+function addItem(item, id) {
+    item.user_id = id
     return db("items").insert(item, "id");
 }
 

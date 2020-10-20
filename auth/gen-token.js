@@ -7,7 +7,7 @@ module.exports = function generateToken(user) {
         department: user.department
     }
     const jwtSecret = require('./secret.js').jwtSecret
-    console.log(jwtSecret)
+
     const jwtOptions = {
         expiresIn: "48h"
     }
