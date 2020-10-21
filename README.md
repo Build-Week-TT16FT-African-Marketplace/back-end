@@ -48,11 +48,11 @@
 
 ### Items Routes
 
-| Method | Endpoint           | Token Required | Description                                                                                                            |
-| ------ | ------------------ | -------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| GET    | `/items`           | yes            | Returns all items                                                                                                      |
-| GET    | `/items/:id`       | yes            | Returns a single item                                                                                                  |
-| POST   | `/items/additem`   | yes            | Adds an item to the database <br> Required: `user_id` <br> All other values in the model are optional, but encouraged. |
-| PUT    | `/items/:id`       | yes            | Edits a single item                                                                                                    |
-| DELETE | `/items/:id`       | yes            | Deletes a single item                                                                                                  |
-| GET    | `/items/:category` | yes            | Gets all items in a category                                                                                           |
+| Method | Endpoint           | Token Required | Description                                                                                        |
+| ------ | ------------------ | -------------- | -------------------------------------------------------------------------------------------------- |
+| GET    | `/items`           | yes            | Returns all items                                                                                  |
+| GET    | `/items/:id`       | yes            | Returns a single item                                                                              |
+| POST   | `/items/additem`   | yes            | Adds an item to the database <br> <br> All other values in the model are optional, but encouraged. |
+| PUT    | `/items/:id`       | yes            | Edits a single item                                                                                |
+| DELETE | `/items/:id`       | yes            | Deletes a single item                                                                              |
+| GET    | `/items/:category` | yes            | Gets all items in a category                                                                       |
