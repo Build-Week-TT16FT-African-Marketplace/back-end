@@ -1,36 +1,42 @@
 # African Marketplace
 
-## Models
+# Welcome to the back-end of African MarketPlace, to find endpoints please use the model below.
 
-#### users
+# If you need directions on how to use Postman with these endpoints please use the link below for detailed directions.
 
-```
-{
-	id: integer
-	username: string
-	password: string
-	department: string,  must be "seller" or "buyer"
-}
-```
+# Once user is registered and authenticated they will recieve a token that will expire after 48 hrs.
 
-#### items
+PostMan Directions https://docs.google.com/presentation/d/1e_siqSAX_sv0GEBFo1dRfzPskUGjokKC_0cc4cHtmLg/edit?usp=sharing
 
-```
-{
-	id: integer
-	name: text
-	description: text
-	price: float
-	location: text
-	category: text
-	URL: string
-	user_id: integer, references the id of the user the item is referenced to
-}
-```
+# Base url https://african-marketplace-seven.vercel.app/Market
+
+# Back-End url https://african-marketplace-back-end.herokuapp.com
+
+### Users
+
+| data       | type                  | required |
+| ---------- | --------------------- | -------- |
+| id         | integer               | yes      |
+| username   | string                | yes      |
+| password   | string                | yes      |
+| department | string (buyer/seller) | yes      |
+
+### Items
+
+| data        | type    | required |
+| ----------- | ------- | -------- |
+| id          | integer | yes      |
+| name        | string  | yes      |
+| description | string  | yes      |
+| price       | float   | yes      |
+| location    | string  | yes      |
+| category    | string  | yes      |
+| URL         | string  | yes      |
+| user_id     | integer | yes      |
 
 ## End Points
 
-### Auth Routes
+### Authentication Routes
 
 | Method | Endpoint         | Token Required | Description                                                                                                       |     |
 | ------ | ---------------- | -------------- | ----------------------------------------------------------------------------------------------------------------- | --- |
