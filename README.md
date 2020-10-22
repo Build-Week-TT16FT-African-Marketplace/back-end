@@ -1,16 +1,16 @@
 # African Marketplace
 
-# Welcome to the back-end of African MarketPlace, to find endpoints please use the model below.
+## Welcome to the back-end of African MarketPlace, to find endpoints please use the model below.
 
-# If you need directions on how to use Postman with these endpoints please use the link below for detailed directions.
+## If you need directions on how to use Postman with these endpoints please use the link below for detailed directions.
 
-# Once user is registered and authenticated they will recieve a token that will expire after 48 hrs.
+### Once user is registered and authenticated they will recieve a token that will expire after 48 hrs.
 
 PostMan Directions https://docs.google.com/presentation/d/1e_siqSAX_sv0GEBFo1dRfzPskUGjokKC_0cc4cHtmLg/edit?usp=sharing
 
-# Base url https://african-marketplace-seven.vercel.app/Market
+## Base url https://african-marketplace-seven.vercel.app/Market
 
-# Back-End url https://african-marketplace-back-end.herokuapp.com
+## Back-End url https://african-marketplace-back-end.herokuapp.com
 
 ### Users
 
